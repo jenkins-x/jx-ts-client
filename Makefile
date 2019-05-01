@@ -1,22 +1,21 @@
 ifndef JX_HOME
 override JX_HOME = ~/.jx
 endif
-GENERATOR_BIN := ${JX_HOME}/bin/openapi-generator-cli
+GENERATOR_BIN := scripts/openapi-generator-cli
 OPENAPI_GENERATOR_VERSION:= 3.3.4
-OUTPUT_DIR_FETCH=client_fetch
+OUTPUT_DIR_JX=generated
+CUSTOMIZATION_DIR=`pwd`/jxtsclientopenapi
 
-all: install-generator generate
+all: build-customization generate
 
-install-generator:
-	@echo "You must install jq first. See https://stedolan.github.io/jq/download/"
-	mkdir -p ${JX_HOME}/bin
-	curl https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/bin/utils/openapi-generator-cli.sh \
-	> ${GENERATOR_BIN}
-	chmod u+x ${GENERATOR_BIN}
+build-customization:
+	mvn clean package -f ${CUSTOMIZATION_DIR}/pom.xml
 
 generate:
-	mkdir -p ${OUTPUT_DIR_FETCH}
+	rm -rf scripts/*.jar
+	mkdir -p ${OUTPUT_DIR_JX}
+	GENERATOR_PREFIXES=com.github.jenkins-x.jx.pkg.apis.jenkins_io.v1 \
 	${GENERATOR_BIN} generate \
 	-i https://raw.githubusercontent.com/jenkins-x/jx/master/docs/apidocs/openapi-spec/openapiv2.yaml \
-	-g typescript-fetch \
-	-o ${OUTPUT_DIR_FETCH}
+	-o ${OUTPUT_DIR_JX} \
+	-g typescript-jx
