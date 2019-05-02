@@ -2,3 +2,4 @@
 target
 *.iml
 scripts/*.jar
+.DS_Store

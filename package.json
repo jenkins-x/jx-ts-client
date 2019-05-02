@@ -1,0 +1,13 @@
+{
+  "name": "jx-ts-client",
+  "version": "0.0.1",
+  "description": "Typescript models for Jenkins X",
+  "main": "client/api.ts",
+  "files": [
+    "generated",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "exit 0"
+  }
+}

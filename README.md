@@ -3,8 +3,8 @@
 This is a generic typescript client for JX. It just contains the models generated from the Jenkins X custom resources.
 
 It's generated from the OpenAPI Schema (see https://github.com/jenkins-x/jx/tree/master/docs/apidocs/openapi-spec and
-https://jenkins-x.io/contribute/apidocs/). To regenerate the client run `make`.
-
+https://jenkins-x.io/contribute/apidocs/). To regenerate the client run `make`. The client is located in the `generated`
+directory and is checked into git.
 
 ## Hacking on the generator
 

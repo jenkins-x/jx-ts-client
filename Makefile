@@ -3,7 +3,7 @@ override JX_HOME = ~/.jx
 endif
 GENERATOR_BIN := scripts/openapi-generator-cli
 OPENAPI_GENERATOR_VERSION:= 3.3.4
-OUTPUT_DIR_JX=generated
+OUTPUT_DIR_JX=client
 CUSTOMIZATION_DIR=`pwd`/jxtsclientopenapi
 
 all: build-customization generate
