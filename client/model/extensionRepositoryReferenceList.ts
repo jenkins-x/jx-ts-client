@@ -12,7 +12,7 @@
 
 import { ExtensionRepositoryReference } from './extensionRepositoryReference';
 
-export class ExtensionRepositoryReferenceList {
+export interface ExtensionRepositoryReferenceList {
     'repositories'?: Array<ExtensionRepositoryReference>;
 
     static discriminator: string | undefined = undefined;

@@ -14,7 +14,7 @@
 /**
 * TCPSocketAction describes an action based on opening a socket
 */
-export class IoK8sApiCoreV1TCPSocketAction {
+export interface IoK8sApiCoreV1TCPSocketAction {
     /**
     * Optional: Host name to connect to, defaults to the pod IP.
     */

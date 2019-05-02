@@ -14,7 +14,7 @@
 /**
 * UserSpec is the user details
 */
-export class UserSpec {
+export interface UserSpec {
     'imageUrl'?: string;
     'linkUrl'?: string;
     'name'?: string;

@@ -17,7 +17,7 @@ import { StorageLocation } from './storageLocation';
 /**
 * TeamSettings the default settings for a team
 */
-export class TeamSettings {
+export interface TeamSettings {
     'appsRepository'?: string;
     'askOnCreate'?: boolean;
     'branchPatterns'?: string;

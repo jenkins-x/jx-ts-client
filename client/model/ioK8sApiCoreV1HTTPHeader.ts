@@ -14,7 +14,7 @@
 /**
 * HTTPHeader describes a custom header to be used in HTTP probes
 */
-export class IoK8sApiCoreV1HTTPHeader {
+export interface IoK8sApiCoreV1HTTPHeader {
     /**
     * The header field name
     */

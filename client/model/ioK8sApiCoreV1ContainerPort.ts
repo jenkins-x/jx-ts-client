@@ -14,7 +14,7 @@
 /**
 * ContainerPort represents a network port in a single container.
 */
-export class IoK8sApiCoreV1ContainerPort {
+export interface IoK8sApiCoreV1ContainerPort {
     /**
     * Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
     */

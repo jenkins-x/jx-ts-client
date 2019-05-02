@@ -14,7 +14,7 @@ import { CommitStatusCommitReference } from './commitStatusCommitReference';
 import { CommitStatusItem } from './commitStatusItem';
 import { ResourceReference } from './resourceReference';
 
-export class CommitStatusDetails {
+export interface CommitStatusDetails {
     'items'?: Array<CommitStatusItem>;
     'checked': boolean;
     'commit': CommitStatusCommitReference;

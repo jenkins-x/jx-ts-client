@@ -14,7 +14,7 @@
 /**
 * TeamSpec is the specification of an Team
 */
-export class TeamSpec {
+export interface TeamSpec {
     'kind'?: string;
     'label'?: string;
     'members'?: Array<string>;

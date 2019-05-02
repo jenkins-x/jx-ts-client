@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1StatusDetails } from './ioK8sApimachinery
 /**
 * Status is a return value for calls that don't return other objects.
 */
-export class IoK8sApimachineryPkgApisMetaV1Status {
+export interface IoK8sApimachineryPkgApisMetaV1Status {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

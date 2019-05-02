@@ -17,7 +17,7 @@ import { IoK8sApimachineryPkgApisMetaV1ObjectMeta } from './ioK8sApimachineryPkg
 /**
 * EnvironmentRoleBinding is like a vanilla RoleBinding but applies to a set of Namespaces based on an Environment filter so that roles can be bound to multiple namespaces easily.  For example to specify the binding of roles on all Preview environments or on all permanent environments.
 */
-export class EnvironmentRoleBinding {
+export interface EnvironmentRoleBinding {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

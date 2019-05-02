@@ -14,7 +14,7 @@
 /**
 * PortworxVolumeSource represents a Portworx volume resource.
 */
-export class IoK8sApiCoreV1PortworxVolumeSource {
+export interface IoK8sApiCoreV1PortworxVolumeSource {
     /**
     * FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified.
     */

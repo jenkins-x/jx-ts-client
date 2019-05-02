@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1ObjectMeta } from './ioK8sApimachineryPkg
 /**
 * Extension represents an extension available to this Jenkins X install
 */
-export class Extension {
+export interface Extension {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

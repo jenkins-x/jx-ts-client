@@ -14,7 +14,7 @@
 /**
 * Measurement is a percentage or a count, something measured that the system will capture within a fact
 */
-export class Measurement {
+export interface Measurement {
     'measurementType': string;
     'measurementValue': number;
     'name': string;

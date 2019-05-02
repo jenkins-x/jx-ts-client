@@ -14,7 +14,7 @@
 /**
 * WorkflowStatus is the status for an Environment resource
 */
-export class WorkflowStatus {
+export interface WorkflowStatus {
     'version'?: string;
 
     static discriminator: string | undefined = undefined;

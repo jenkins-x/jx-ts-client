@@ -14,7 +14,7 @@
 /**
 * PromotePullRequestStep is the step for promoting a version to an environment by raising a Pull Request on the git repository of the environment
 */
-export class PromotePullRequestStep {
+export interface PromotePullRequestStep {
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
     */

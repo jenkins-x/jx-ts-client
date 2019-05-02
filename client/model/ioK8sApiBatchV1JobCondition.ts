@@ -14,7 +14,7 @@
 /**
 * JobCondition describes current state of a job.
 */
-export class IoK8sApiBatchV1JobCondition {
+export interface IoK8sApiBatchV1JobCondition {
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
     */

@@ -18,7 +18,7 @@ import { IoK8sApiCoreV1ServiceAccountTokenProjection } from './ioK8sApiCoreV1Ser
 /**
 * Projection that may be projected along with other supported volume types
 */
-export class IoK8sApiCoreV1VolumeProjection {
+export interface IoK8sApiCoreV1VolumeProjection {
     'configMap'?: IoK8sApiCoreV1ConfigMapProjection;
     'downwardAPI'?: IoK8sApiCoreV1DownwardAPIProjection;
     'secret'?: IoK8sApiCoreV1SecretProjection;

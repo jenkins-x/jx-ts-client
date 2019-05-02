@@ -17,7 +17,7 @@ import { IoK8sApiCoreV1TCPSocketAction } from './ioK8sApiCoreV1TCPSocketAction';
 /**
 * Handler defines a specific action that should be taken
 */
-export class IoK8sApiCoreV1Handler {
+export interface IoK8sApiCoreV1Handler {
     'exec'?: IoK8sApiCoreV1ExecAction;
     'httpGet'?: IoK8sApiCoreV1HTTPGetAction;
     'tcpSocket'?: IoK8sApiCoreV1TCPSocketAction;

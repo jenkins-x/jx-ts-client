@@ -14,7 +14,7 @@
 /**
 * EnvironmentFilter specifies the environments to apply the role binding to
 */
-export class EnvironmentFilter {
+export interface EnvironmentFilter {
     'excludes'?: Array<string>;
     'includes'?: Array<string>;
     'kind'?: string;

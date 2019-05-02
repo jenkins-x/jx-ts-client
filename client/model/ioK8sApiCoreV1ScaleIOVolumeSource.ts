@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1LocalObjectReference } from './ioK8sApiCoreV1LocalObjectR
 /**
 * ScaleIOVolumeSource represents a persistent ScaleIO volume
 */
-export class IoK8sApiCoreV1ScaleIOVolumeSource {
+export interface IoK8sApiCoreV1ScaleIOVolumeSource {
     /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\".
     */

@@ -17,7 +17,7 @@ import { ReleaseStatus } from './releaseStatus';
 /**
 * Release represents a single version of an app that has been released
 */
-export class Release {
+export interface Release {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

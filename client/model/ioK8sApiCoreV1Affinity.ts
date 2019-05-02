@@ -17,7 +17,7 @@ import { IoK8sApiCoreV1PodAntiAffinity } from './ioK8sApiCoreV1PodAntiAffinity';
 /**
 * Affinity is a group of affinity scheduling rules.
 */
-export class IoK8sApiCoreV1Affinity {
+export interface IoK8sApiCoreV1Affinity {
     'nodeAffinity'?: IoK8sApiCoreV1NodeAffinity;
     'podAffinity'?: IoK8sApiCoreV1PodAffinity;
     'podAntiAffinity'?: IoK8sApiCoreV1PodAntiAffinity;

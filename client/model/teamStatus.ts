@@ -14,7 +14,7 @@
 /**
 * TeamStatus is the status for an Team resource
 */
-export class TeamStatus {
+export interface TeamStatus {
     'message'?: string;
     'provisionStatus'?: string;
 

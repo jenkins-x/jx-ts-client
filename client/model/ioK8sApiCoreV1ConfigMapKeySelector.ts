@@ -14,7 +14,7 @@
 /**
 * Selects a key from a ConfigMap.
 */
-export class IoK8sApiCoreV1ConfigMapKeySelector {
+export interface IoK8sApiCoreV1ConfigMapKeySelector {
     /**
     * The key to select.
     */

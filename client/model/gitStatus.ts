@@ -14,7 +14,7 @@
 /**
 * GitStatus the status of a git commit in terms of CI/CD
 */
-export class GitStatus {
+export interface GitStatus {
     'status'?: string;
     'url'?: string;
 

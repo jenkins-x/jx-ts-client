@@ -14,7 +14,7 @@
 /**
 * Maps a string key to a path within a volume.
 */
-export class IoK8sApiCoreV1KeyToPath {
+export interface IoK8sApiCoreV1KeyToPath {
     /**
     * The key to project.
     */

@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1LocalObjectReference } from './ioK8sApiCoreV1LocalObjectR
 /**
 * FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
 */
-export class IoK8sApiCoreV1FlexVolumeSource {
+export interface IoK8sApiCoreV1FlexVolumeSource {
     /**
     * Driver is the name of the driver to use for this volume.
     */

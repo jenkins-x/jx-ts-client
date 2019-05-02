@@ -16,7 +16,7 @@ import { IssueSummary } from './issueSummary';
 /**
 * ReleaseSpec is the specification of the Release
 */
-export class ReleaseSpec {
+export interface ReleaseSpec {
     'commits'?: Array<CommitSummary>;
     'gitCloneUrl'?: string;
     'gitHttpUrl'?: string;

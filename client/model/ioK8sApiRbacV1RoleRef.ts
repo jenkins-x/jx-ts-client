@@ -14,7 +14,7 @@
 /**
 * RoleRef contains information that points to the role being used
 */
-export class IoK8sApiRbacV1RoleRef {
+export interface IoK8sApiRbacV1RoleRef {
     /**
     * APIGroup is the group for the resource being referenced
     */

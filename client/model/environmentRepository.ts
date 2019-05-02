@@ -14,7 +14,7 @@
 /**
 * EnvironmentRepository is the repository for an environment using GitOps
 */
-export class EnvironmentRepository {
+export interface EnvironmentRepository {
     'kind'?: string;
     'ref'?: string;
     'url'?: string;

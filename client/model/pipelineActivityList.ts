@@ -16,7 +16,7 @@ import { PipelineActivity } from './pipelineActivity';
 /**
 * PipelineActivityList is a list of PipelineActivity resources
 */
-export class PipelineActivityList {
+export interface PipelineActivityList {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

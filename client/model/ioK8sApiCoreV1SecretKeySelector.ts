@@ -14,7 +14,7 @@
 /**
 * SecretKeySelector selects a key of a Secret.
 */
-export class IoK8sApiCoreV1SecretKeySelector {
+export interface IoK8sApiCoreV1SecretKeySelector {
     /**
     * The key of the secret to select from.  Must be a valid secret key.
     */

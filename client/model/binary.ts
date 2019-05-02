@@ -14,7 +14,7 @@
 /**
 * Binary provies the details of a downloadable binary
 */
-export class Binary {
+export interface Binary {
     'goarch'?: string;
     'goos'?: string;
     'url'?: string;

@@ -11,7 +11,7 @@
  */
 
 
-export class EnvironmentVariable {
+export interface EnvironmentVariable {
     'name'?: string;
     'value'?: string;
 

@@ -15,7 +15,7 @@ import { ExtensionDefinition } from './extensionDefinition';
 /**
 * ExtensionDefinitionList contains a list of ExtensionDefinition items
 */
-export class ExtensionDefinitionList {
+export interface ExtensionDefinitionList {
     'extensions': Array<ExtensionDefinition>;
     'version'?: string;
 

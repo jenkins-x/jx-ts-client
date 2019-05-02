@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1ObjectMeta } from './ioK8sApimachineryPkg
 /**
 * GitService represents a git provider so we can map the host name to a kinda of git service
 */
-export class GitService {
+export interface GitService {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

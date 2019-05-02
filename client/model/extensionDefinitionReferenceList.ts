@@ -15,7 +15,7 @@ import { ExtensionDefinitionReference } from './extensionDefinitionReference';
 /**
 * ExtensionDefinitionReferenceList contains a list of ExtensionRepository items
 */
-export class ExtensionDefinitionReferenceList {
+export interface ExtensionDefinitionReferenceList {
     'remotes': Array<ExtensionDefinitionReference>;
 
     static discriminator: string | undefined = undefined;

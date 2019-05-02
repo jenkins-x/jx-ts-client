@@ -15,7 +15,7 @@ import { IoK8sApiBatchV1JobCondition } from './ioK8sApiBatchV1JobCondition';
 /**
 * JobStatus represents the current state of a Job.
 */
-export class IoK8sApiBatchV1JobStatus {
+export interface IoK8sApiBatchV1JobStatus {
     /**
     * The number of actively running pods.
     */

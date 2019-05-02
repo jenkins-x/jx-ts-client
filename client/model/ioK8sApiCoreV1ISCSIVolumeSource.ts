@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1LocalObjectReference } from './ioK8sApiCoreV1LocalObjectR
 /**
 * Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
 */
-export class IoK8sApiCoreV1ISCSIVolumeSource {
+export interface IoK8sApiCoreV1ISCSIVolumeSource {
     /**
     * whether support iSCSI Discovery CHAP authentication
     */

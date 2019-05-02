@@ -18,7 +18,7 @@ import { Statement } from './statement';
 /**
 * FactSpec is the specification of a Fact
 */
-export class FactSpec {
+export interface FactSpec {
     'factType': string;
     'measurements'?: Array<Measurement>;
     'name': string;

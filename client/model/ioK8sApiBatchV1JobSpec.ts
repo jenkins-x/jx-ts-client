@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1LabelSelector } from './ioK8sApimachinery
 /**
 * JobSpec describes how the job execution will look like.
 */
-export class IoK8sApiBatchV1JobSpec {
+export interface IoK8sApiBatchV1JobSpec {
     /**
     * Specifies the duration in seconds relative to the startTime that the job may be active before the system tries to terminate it; value must be positive integer
     */

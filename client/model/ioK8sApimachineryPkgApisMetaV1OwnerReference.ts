@@ -14,7 +14,7 @@
 /**
 * OwnerReference contains enough information to let you identify an owning object. Currently, an owning object must be in the same namespace, so there is no namespace field.
 */
-export class IoK8sApimachineryPkgApisMetaV1OwnerReference {
+export interface IoK8sApimachineryPkgApisMetaV1OwnerReference {
     /**
     * API version of the referent.
     */

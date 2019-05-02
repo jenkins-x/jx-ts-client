@@ -14,7 +14,7 @@
 /**
 * EnvironmentStatus is the status for an Environment resource
 */
-export class EnvironmentStatus {
+export interface EnvironmentStatus {
     'version'?: string;
 
     static discriminator: string | undefined = undefined;

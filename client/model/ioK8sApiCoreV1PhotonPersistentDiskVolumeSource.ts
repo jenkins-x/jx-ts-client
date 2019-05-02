@@ -14,7 +14,7 @@
 /**
 * Represents a Photon Controller persistent disk resource.
 */
-export class IoK8sApiCoreV1PhotonPersistentDiskVolumeSource {
+export interface IoK8sApiCoreV1PhotonPersistentDiskVolumeSource {
     /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
     */

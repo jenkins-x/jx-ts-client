@@ -11,7 +11,7 @@
  */
 
 
-export class CommitStatusItem {
+export interface CommitStatusItem {
     'description'?: string;
     'name'?: string;
     'pass': boolean;

@@ -14,7 +14,7 @@
 /**
 * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
 */
-export class IoK8sApiCoreV1AzureDiskVolumeSource {
+export interface IoK8sApiCoreV1AzureDiskVolumeSource {
     /**
     * Host Caching mode: None, Read Only, Read Write.
     */

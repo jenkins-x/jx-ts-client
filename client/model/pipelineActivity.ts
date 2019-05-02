@@ -17,7 +17,7 @@ import { PipelineActivityStatus } from './pipelineActivityStatus';
 /**
 * PipelineActivity represents pipeline activity for a particular run of a pipeline
 */
-export class PipelineActivity {
+export interface PipelineActivity {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

@@ -11,7 +11,7 @@
  */
 
 
-export class ResourceReference {
+export interface ResourceReference {
     /**
     * API version of the referent.
     */

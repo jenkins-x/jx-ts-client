@@ -11,7 +11,7 @@
  */
 
 
-export class CommitStatusCommitReference {
+export interface CommitStatusCommitReference {
     'gitUrl'?: string;
     'pullRequest'?: string;
     'sha'?: string;

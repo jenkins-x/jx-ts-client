@@ -14,7 +14,7 @@
 /**
 * AppSpec provides details of the metadata for an App
 */
-export class AppSpec {
+export interface AppSpec {
     /**
     * A list of services that this App exposes
     */

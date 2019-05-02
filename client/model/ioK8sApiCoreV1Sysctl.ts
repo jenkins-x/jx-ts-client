@@ -14,7 +14,7 @@
 /**
 * Sysctl defines a kernel parameter to be set
 */
-export class IoK8sApiCoreV1Sysctl {
+export interface IoK8sApiCoreV1Sysctl {
     /**
     * Name of a property to set
     */

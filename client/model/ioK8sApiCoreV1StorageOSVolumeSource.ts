@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1LocalObjectReference } from './ioK8sApiCoreV1LocalObjectR
 /**
 * Represents a StorageOS persistent volume resource.
 */
-export class IoK8sApiCoreV1StorageOSVolumeSource {
+export interface IoK8sApiCoreV1StorageOSVolumeSource {
     /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.
     */

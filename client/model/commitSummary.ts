@@ -15,7 +15,7 @@ import { UserDetails } from './userDetails';
 /**
 * CommitSummary is the summary of a commit
 */
-export class CommitSummary {
+export interface CommitSummary {
     'author'?: UserDetails;
     'branch'?: string;
     'committer'?: UserDetails;

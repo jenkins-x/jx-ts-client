@@ -41,7 +41,7 @@ import { IoK8sApiCoreV1VsphereVirtualDiskVolumeSource } from './ioK8sApiCoreV1Vs
 /**
 * Volume represents a named volume in a pod that may be accessed by any container in the pod.
 */
-export class IoK8sApiCoreV1Volume {
+export interface IoK8sApiCoreV1Volume {
     'awsElasticBlockStore'?: IoK8sApiCoreV1AWSElasticBlockStoreVolumeSource;
     'azureDisk'?: IoK8sApiCoreV1AzureDiskVolumeSource;
     'azureFile'?: IoK8sApiCoreV1AzureFileVolumeSource;

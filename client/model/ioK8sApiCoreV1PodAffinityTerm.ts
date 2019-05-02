@@ -15,7 +15,7 @@ import { IoK8sApimachineryPkgApisMetaV1LabelSelector } from './ioK8sApimachinery
 /**
 * Defines a set of pods (namely those matching the labelSelector relative to the given namespace(s)) that this pod should be co-located (affinity) or not co-located (anti-affinity) with, where co-located is defined as running on a node whose value of the label with key <topologyKey> matches that of any node on which a pod of the set of pods is running
 */
-export class IoK8sApiCoreV1PodAffinityTerm {
+export interface IoK8sApiCoreV1PodAffinityTerm {
     'labelSelector'?: IoK8sApimachineryPkgApisMetaV1LabelSelector;
     /**
     * namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"

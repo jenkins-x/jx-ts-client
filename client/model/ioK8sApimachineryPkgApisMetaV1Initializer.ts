@@ -14,7 +14,7 @@
 /**
 * Initializer is information about an initializer that has not yet completed.
 */
-export class IoK8sApimachineryPkgApisMetaV1Initializer {
+export interface IoK8sApimachineryPkgApisMetaV1Initializer {
     /**
     * name of the process that is responsible for initializing this object.
     */

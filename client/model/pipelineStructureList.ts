@@ -16,7 +16,7 @@ import { PipelineStructure } from './pipelineStructure';
 /**
 * PipelineStructureList is a list of PipelineStructureList resources
 */
-export class PipelineStructureList {
+export interface PipelineStructureList {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

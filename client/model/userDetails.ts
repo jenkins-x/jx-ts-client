@@ -15,7 +15,7 @@ import { AccountReference } from './accountReference';
 /**
 * UserDetails containers details of a user
 */
-export class UserDetails {
+export interface UserDetails {
     'accountReference'?: Array<AccountReference>;
     'avatarUrl'?: string;
     /**

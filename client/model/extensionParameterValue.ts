@@ -11,7 +11,7 @@
  */
 
 
-export class ExtensionParameterValue {
+export interface ExtensionParameterValue {
     'name': string;
     'value': string;
 

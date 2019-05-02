@@ -11,7 +11,7 @@
  */
 
 
-export class Attachment {
+export interface Attachment {
     'name'?: string;
     'urls'?: Array<string>;
 

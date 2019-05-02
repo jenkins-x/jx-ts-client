@@ -14,7 +14,7 @@
 /**
 * ExtensionParameter describes a parameter definition for an extension
 */
-export class ExtensionParameter {
+export interface ExtensionParameter {
     'defaultValue'?: string;
     'description'?: string;
     'environmentVariableName'?: string;

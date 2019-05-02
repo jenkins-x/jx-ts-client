@@ -15,7 +15,7 @@ import { ExtensionConfig } from './extensionConfig';
 /**
 * ExtensionsConfigList contains a list of ExtensionConfig items
 */
-export class ExtensionConfigList {
+export interface ExtensionConfigList {
     'extensions': Array<ExtensionConfig>;
 
     static discriminator: string | undefined = undefined;

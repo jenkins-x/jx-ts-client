@@ -15,7 +15,7 @@ import { CommitStatusDetails } from './commitStatusDetails';
 /**
 * CommitStatusSpec provides details of a particular commit status
 */
-export class CommitStatusSpec {
+export interface CommitStatusSpec {
     'items': Array<CommitStatusDetails>;
 
     static discriminator: string | undefined = undefined;

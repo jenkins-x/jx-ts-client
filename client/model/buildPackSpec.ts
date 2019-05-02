@@ -15,7 +15,7 @@ import { QuickStartLocation } from './quickStartLocation';
 /**
 * BuildPackSpec is the specification of an BuildPack
 */
-export class BuildPackSpec {
+export interface BuildPackSpec {
     'gitRef'?: string;
     'gitUrl'?: string;
     'label'?: string;

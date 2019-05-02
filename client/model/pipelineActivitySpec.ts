@@ -17,7 +17,7 @@ import { PipelineActivityStep } from './pipelineActivityStep';
 /**
 * PipelineActivitySpec is the specification of the pipeline activity
 */
-export class PipelineActivitySpec {
+export interface PipelineActivitySpec {
     'attachments'?: Array<Attachment>;
     'author'?: string;
     'build'?: string;

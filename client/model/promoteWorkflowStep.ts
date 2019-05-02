@@ -14,7 +14,7 @@
 /**
 * PromoteWorkflowStep is the step of promoting a version of an application to an environment
 */
-export class PromoteWorkflowStep {
+export interface PromoteWorkflowStep {
     'environment'?: string;
 
     static discriminator: string | undefined = undefined;

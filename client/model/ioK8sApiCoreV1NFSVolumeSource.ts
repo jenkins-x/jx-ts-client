@@ -14,7 +14,7 @@
 /**
 * Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.
 */
-export class IoK8sApiCoreV1NFSVolumeSource {
+export interface IoK8sApiCoreV1NFSVolumeSource {
     /**
     * Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */

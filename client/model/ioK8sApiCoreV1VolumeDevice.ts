@@ -14,7 +14,7 @@
 /**
 * volumeDevice describes a mapping of a raw block device within a container.
 */
-export class IoK8sApiCoreV1VolumeDevice {
+export interface IoK8sApiCoreV1VolumeDevice {
     /**
     * devicePath is the path inside of the container that the device will be mapped to.
     */

@@ -14,7 +14,7 @@
 /**
 * QuickStartLocation
 */
-export class QuickStartLocation {
+export interface QuickStartLocation {
     'excludes'?: Array<string>;
     'gitKind'?: string;
     'gitUrl'?: string;

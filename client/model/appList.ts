@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1ListMeta } from './ioK8sApimachineryPkgAp
 /**
 * AppList is a structure used by k8s to store lists of apps
 */
-export class AppList {
+export interface AppList {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
