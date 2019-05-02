@@ -1,13 +1,12 @@
 package io.jenkinsx.jxtsclient;
 
-import org.openapitools.codegen.languages.TypeScriptFetchClientCodegen;
 import org.openapitools.codegen.languages.TypeScriptNodeClientCodegen;
 
-public class JenkinsXTSClientCodegen extends TypeScriptNodeClientCodegen {
+public class TypeScriptNodeClientCodegenOverride extends TypeScriptNodeClientCodegen {
 
     private String[] prefixes;
 
-    public JenkinsXTSClientCodegen() {
+    public TypeScriptNodeClientCodegenOverride() {
         String prefixesStr = System.getenv("GENERATOR_PREFIXES");
         this.prefixes = prefixesStr.split(",");
     }
@@ -30,7 +29,7 @@ public class JenkinsXTSClientCodegen extends TypeScriptNodeClientCodegen {
 
     @Override
     public String getName() {
-        return "typescript-jx";
+        return "typescript-node";
     }
 
 }

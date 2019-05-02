@@ -56,9 +56,7 @@ if [ ! -f ${DIR}/${jar} ]; then
     -Ddest=${DIR}/${jar}
 fi
 
-zip -qq -d scripts/${artifactid}-${ver}.jar "META-INF/services/org.openapitools.codegen.CodegenConfig"
-pushd jxtsclientopenapi/target/classes && zip -ur ../../../scripts/${artifactid}-${ver}.jar *
-popd
+pushd jxtsclientopenapi/target/classes && zip -qq -ur ../../../scripts/${artifactid}-${ver}.jar * && popd
 
 java -ea                          \
   ${JAVA_OPTS}                    \

@@ -18,4 +18,4 @@ generate:
 	${GENERATOR_BIN} generate \
 	-i https://raw.githubusercontent.com/jenkins-x/jx/master/docs/apidocs/openapi-spec/openapiv2.yaml \
 	-o ${OUTPUT_DIR_JX} \
-	-g typescript-jx
+	-g typescript-node
