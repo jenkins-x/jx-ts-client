@@ -1,0 +1,10 @@
+buildPack: javascript
+buildPackGitURL: https://github.com/jenkins-x-buildpacks/jenkins-x-classic
+pipelineConfig:
+  agent:
+    image: gcr.io/jenkinsxio/builder-nodejs:0.1.442
+  pipelines:
+    release:
+      postBuild:
+        steps:
+        - sh: npm publish --tag `cat VERSION`
