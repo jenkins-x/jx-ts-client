@@ -9,4 +9,5 @@ pipelineConfig:
           sh: npm publish
       setVersion:
         steps:
-        - command: npm version \$(cat VERSION)
+        - sh: npm version \$(cat VERSION)
+          name: npm-version
