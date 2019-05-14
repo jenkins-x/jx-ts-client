@@ -7,7 +7,7 @@ pipelineConfig:
         steps:
         - name: npm-publish
           sh: npm publish
-      setVersion:
+      preBuild:
         steps:
-        - sh: npm version \$(cat VERSION)
-          name: npm-version
+        - agent: {}
+          command: npm version \$(cat VERSION)
