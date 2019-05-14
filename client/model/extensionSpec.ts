@@ -15,7 +15,7 @@ import { ExtensionParameter } from './extensionParameter';
 /**
 * ExtensionSpec provides details of an extension available for a team
 */
-export class ExtensionSpec {
+export interface ExtensionSpec {
     'children'?: Array<string>;
     'description'?: string;
     'given'?: string;

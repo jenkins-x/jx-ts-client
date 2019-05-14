@@ -16,7 +16,7 @@ import { IoK8sApiCoreV1SecretEnvSource } from './ioK8sApiCoreV1SecretEnvSource';
 /**
 * EnvFromSource represents the source of a set of ConfigMaps
 */
-export class IoK8sApiCoreV1EnvFromSource {
+export interface IoK8sApiCoreV1EnvFromSource {
     'configMapRef'?: IoK8sApiCoreV1ConfigMapEnvSource;
     /**
     * An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.

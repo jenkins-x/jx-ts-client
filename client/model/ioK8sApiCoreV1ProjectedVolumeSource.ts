@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1VolumeProjection } from './ioK8sApiCoreV1VolumeProjection
 /**
 * Represents a projected volume source
 */
-export class IoK8sApiCoreV1ProjectedVolumeSource {
+export interface IoK8sApiCoreV1ProjectedVolumeSource {
     /**
     * Mode bits to use on created files by default. Must be a value between 0 and 0777. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
     */

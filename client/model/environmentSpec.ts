@@ -17,7 +17,7 @@ import { TeamSettings } from './teamSettings';
 /**
 * EnvironmentSpec is the specification of an Environment
 */
-export class EnvironmentSpec {
+export interface EnvironmentSpec {
     'cluster'?: string;
     'kind'?: string;
     'label'?: string;

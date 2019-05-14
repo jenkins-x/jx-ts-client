@@ -14,7 +14,7 @@
 /**
 * WorkflowPreconditions is the trigger to start a step
 */
-export class WorkflowPreconditions {
+export interface WorkflowPreconditions {
     /**
     * the names of the environments which need to have promoted before this step can be triggered
     */

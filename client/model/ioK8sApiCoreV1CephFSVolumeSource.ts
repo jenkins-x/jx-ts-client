@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1LocalObjectReference } from './ioK8sApiCoreV1LocalObjectR
 /**
 * Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.
 */
-export class IoK8sApiCoreV1CephFSVolumeSource {
+export interface IoK8sApiCoreV1CephFSVolumeSource {
     /**
     * Required: Monitors is a collection of Ceph monitors More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
     */

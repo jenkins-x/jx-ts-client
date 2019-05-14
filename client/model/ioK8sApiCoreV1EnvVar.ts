@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1EnvVarSource } from './ioK8sApiCoreV1EnvVarSource';
 /**
 * EnvVar represents an environment variable present in a Container.
 */
-export class IoK8sApiCoreV1EnvVar {
+export interface IoK8sApiCoreV1EnvVar {
     /**
     * Name of the environment variable. Must be a C_IDENTIFIER.
     */

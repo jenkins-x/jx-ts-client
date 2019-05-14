@@ -16,7 +16,7 @@ import { UserDetails } from './userDetails';
 /**
 * IssueSummary is the summary of an issue
 */
-export class IssueSummary {
+export interface IssueSummary {
     'assignees'?: Array<UserDetails>;
     'body'?: string;
     'closedBy'?: UserDetails;

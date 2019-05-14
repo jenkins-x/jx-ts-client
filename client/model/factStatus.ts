@@ -14,7 +14,7 @@
 /**
 * FactStatus is the status for an Fact resource
 */
-export class FactStatus {
+export interface FactStatus {
     'version'?: string;
 
     static discriminator: string | undefined = undefined;

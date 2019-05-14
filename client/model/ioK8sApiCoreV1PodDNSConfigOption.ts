@@ -14,7 +14,7 @@
 /**
 * PodDNSConfigOption defines DNS resolver options of a pod.
 */
-export class IoK8sApiCoreV1PodDNSConfigOption {
+export interface IoK8sApiCoreV1PodDNSConfigOption {
     /**
     * Required.
     */

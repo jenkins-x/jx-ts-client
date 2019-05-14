@@ -14,7 +14,7 @@
 /**
 * HostAlias holds the mapping between IP and hostnames that will be injected as an entry in the pod's hosts file.
 */
-export class IoK8sApiCoreV1HostAlias {
+export interface IoK8sApiCoreV1HostAlias {
     /**
     * Hostnames for the above IP address.
     */

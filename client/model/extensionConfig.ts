@@ -15,7 +15,7 @@ import { ExtensionParameterValue } from './extensionParameterValue';
 /**
 * ExtensionConfig is the configuration and enablement for an extension inside an app
 */
-export class ExtensionConfig {
+export interface ExtensionConfig {
     'name': string;
     'namespace': string;
     'parameters': Array<ExtensionParameterValue>;

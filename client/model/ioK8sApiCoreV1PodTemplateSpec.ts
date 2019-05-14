@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1ObjectMeta } from './ioK8sApimachineryPkg
 /**
 * PodTemplateSpec describes the data a pod should have when created from a template
 */
-export class IoK8sApiCoreV1PodTemplateSpec {
+export interface IoK8sApiCoreV1PodTemplateSpec {
     'metadata'?: IoK8sApimachineryPkgApisMetaV1ObjectMeta;
     'spec'?: IoK8sApiCoreV1PodSpec;
 

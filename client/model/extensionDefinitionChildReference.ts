@@ -14,7 +14,7 @@
 /**
 * ExtensionDefinitionChildReference provides a reference to a child
 */
-export class ExtensionDefinitionChildReference {
+export interface ExtensionDefinitionChildReference {
     'name'?: string;
     'namespace'?: string;
     'remote'?: string;

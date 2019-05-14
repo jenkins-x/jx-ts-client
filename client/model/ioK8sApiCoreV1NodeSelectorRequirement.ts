@@ -14,7 +14,7 @@
 /**
 * A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
 */
-export class IoK8sApiCoreV1NodeSelectorRequirement {
+export interface IoK8sApiCoreV1NodeSelectorRequirement {
     /**
     * The label key that the selector applies to.
     */

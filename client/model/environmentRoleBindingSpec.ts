@@ -17,7 +17,7 @@ import { IoK8sApiRbacV1Subject } from './ioK8sApiRbacV1Subject';
 /**
 * EnvironmentRoleBindingSpec is the specification of an EnvironmentRoleBinding
 */
-export class EnvironmentRoleBindingSpec {
+export interface EnvironmentRoleBindingSpec {
     /**
     * specifies which sets of environments this binding applies to
     */

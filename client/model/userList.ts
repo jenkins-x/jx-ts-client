@@ -16,7 +16,7 @@ import { User } from './user';
 /**
 * UserList is a list of User resources
 */
-export class UserList {
+export interface UserList {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

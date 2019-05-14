@@ -16,7 +16,7 @@ import { PipelineStructureStage } from './pipelineStructureStage';
 /**
 * PipelineStructure contains references to the Pipeline and PipelineRun, and a list of PipelineStructureStages in the pipeline. This allows us to map between a running Pod to its TaskRun, to the TaskRun's Task and PipelineRun, and finally from there to the stage and potential parent stages that the Pod is actually executing, for use with populating PipelineActivity and providing logs.
 */
-export class PipelineStructure {
+export interface PipelineStructure {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

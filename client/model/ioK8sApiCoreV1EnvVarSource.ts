@@ -18,7 +18,7 @@ import { IoK8sApiCoreV1SecretKeySelector } from './ioK8sApiCoreV1SecretKeySelect
 /**
 * EnvVarSource represents a source for the value of an EnvVar.
 */
-export class IoK8sApiCoreV1EnvVarSource {
+export interface IoK8sApiCoreV1EnvVarSource {
     'configMapKeyRef'?: IoK8sApiCoreV1ConfigMapKeySelector;
     'fieldRef'?: IoK8sApiCoreV1ObjectFieldSelector;
     'resourceFieldRef'?: IoK8sApiCoreV1ResourceFieldSelector;

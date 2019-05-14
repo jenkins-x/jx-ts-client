@@ -14,7 +14,7 @@
 /**
 * PipelineStructureStage contains the stage's name, one of either a reference to the Task corresponding to the stage if it has steps, a list of sequential stage names nested within this stage, or a list of parallel stage names nested within this stage, and information on this stage's depth within the PipelineStructure as a whole, the name of its parent stage, if any, the name of the stage before it in execution order, if any, and the name of the stage after it in execution order, if any.
 */
-export class PipelineStructureStage {
+export interface PipelineStructureStage {
     'depth': number;
     'name': string;
     'next'?: string;

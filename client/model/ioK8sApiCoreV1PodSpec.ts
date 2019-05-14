@@ -23,7 +23,7 @@ import { IoK8sApiCoreV1Volume } from './ioK8sApiCoreV1Volume';
 /**
 * PodSpec is a description of a pod.
 */
-export class IoK8sApiCoreV1PodSpec {
+export interface IoK8sApiCoreV1PodSpec {
     /**
     * Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
     */

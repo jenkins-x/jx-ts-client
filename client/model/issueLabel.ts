@@ -11,7 +11,7 @@
  */
 
 
-export class IssueLabel {
+export interface IssueLabel {
     'color'?: string;
     'name'?: string;
     'url'?: string;

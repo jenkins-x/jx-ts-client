@@ -15,7 +15,7 @@ import { UserSpec } from './userSpec';
 /**
 * PreviewGitSpec is the preview git branch/pull request details
 */
-export class PreviewGitSpec {
+export interface PreviewGitSpec {
     'appName'?: string;
     'applicationURL'?: string;
     'buildStatus'?: string;

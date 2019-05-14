@@ -14,7 +14,7 @@
 /**
 * AccountReference is a reference to a user account in another system that is attached to this user
 */
-export class AccountReference {
+export interface AccountReference {
     'id'?: string;
     'provider'?: string;
 

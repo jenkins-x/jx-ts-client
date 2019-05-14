@@ -17,7 +17,7 @@ import { StageActivityStep } from './stageActivityStep';
 /**
 * PipelineActivityStep represents a step in a pipeline activity
 */
-export class PipelineActivityStep {
+export interface PipelineActivityStep {
     'kind'?: string;
     'preview'?: PreviewActivityStep;
     'promote'?: PromoteActivityStep;

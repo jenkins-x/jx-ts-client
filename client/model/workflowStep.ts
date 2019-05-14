@@ -16,7 +16,7 @@ import { WorkflowPreconditions } from './workflowPreconditions';
 /**
 * WorkflowStep represents a step in a pipeline activity
 */
-export class WorkflowStep {
+export interface WorkflowStep {
     'description'?: string;
     'kind'?: string;
     'name'?: string;

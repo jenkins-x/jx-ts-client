@@ -14,7 +14,7 @@
 /**
 * PreviewActivityStep is the step of creating a preview environment as part of a Pull Request pipeline
 */
-export class PreviewActivityStep {
+export interface PreviewActivityStep {
     'applicationURL'?: string;
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.

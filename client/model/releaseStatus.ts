@@ -14,7 +14,7 @@
 /**
 * ReleaseStatus is the status of a release
 */
-export class ReleaseStatus {
+export interface ReleaseStatus {
     'status'?: string;
 
     static discriminator: string | undefined = undefined;

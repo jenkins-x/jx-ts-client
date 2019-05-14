@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1KeyToPath } from './ioK8sApiCoreV1KeyToPath';
 /**
 * Adapts a Secret into a volume.  The contents of the target Secret's Data field will be presented in a volume as files using the keys in the Data field as the file names. Secret volumes support ownership management and SELinux relabeling.
 */
-export class IoK8sApiCoreV1SecretVolumeSource {
+export interface IoK8sApiCoreV1SecretVolumeSource {
     /**
     * Optional: mode bits to use on created files by default. Must be a value between 0 and 0777. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
     */

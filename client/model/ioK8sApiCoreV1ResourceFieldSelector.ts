@@ -14,7 +14,7 @@
 /**
 * ResourceFieldSelector represents container resources (cpu, memory) and their output format
 */
-export class IoK8sApiCoreV1ResourceFieldSelector {
+export interface IoK8sApiCoreV1ResourceFieldSelector {
     /**
     * Container name: required for volumes, optional for env vars
     */

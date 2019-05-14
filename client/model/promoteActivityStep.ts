@@ -16,7 +16,7 @@ import { PromoteUpdateStep } from './promoteUpdateStep';
 /**
 * PromoteActivityStep is the step of promoting a version of an application to an environment
 */
-export class PromoteActivityStep {
+export interface PromoteActivityStep {
     'applicationURL'?: string;
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.

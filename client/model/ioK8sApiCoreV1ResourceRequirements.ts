@@ -14,7 +14,7 @@
 /**
 * ResourceRequirements describes the compute resource requirements.
 */
-export class IoK8sApiCoreV1ResourceRequirements {
+export interface IoK8sApiCoreV1ResourceRequirements {
     /**
     * Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     */

@@ -11,7 +11,7 @@
  */
 
 
-export class ChartRef {
+export interface ChartRef {
     'name'?: string;
     'repo'?: string;
     'repoName'?: string;

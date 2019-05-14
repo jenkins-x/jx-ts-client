@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1PodAffinityTerm } from './ioK8sApiCoreV1PodAffinityTerm';
 /**
 * The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)
 */
-export class IoK8sApiCoreV1WeightedPodAffinityTerm {
+export interface IoK8sApiCoreV1WeightedPodAffinityTerm {
     'podAffinityTerm': IoK8sApiCoreV1PodAffinityTerm;
     /**
     * weight associated with matching the corresponding podAffinityTerm, in the range 1-100.

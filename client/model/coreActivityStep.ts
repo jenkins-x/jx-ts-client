@@ -14,7 +14,7 @@
 /**
 * CoreActivityStep is a base step included in Stages of a pipeline or other kinds of step
 */
-export class CoreActivityStep {
+export interface CoreActivityStep {
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
     */

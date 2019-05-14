@@ -15,7 +15,7 @@ import { GitStatus } from './gitStatus';
 /**
 * PromoteUpdateStep is the step for updating a promotion after the Pull Request merges to master
 */
-export class PromoteUpdateStep {
+export interface PromoteUpdateStep {
     /**
     * Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
     */

@@ -16,7 +16,7 @@ import { IoK8sApimachineryPkgApisMetaV1Status } from './ioK8sApimachineryPkgApis
 /**
 * Initializers tracks the progress of initialization.
 */
-export class IoK8sApimachineryPkgApisMetaV1Initializers {
+export interface IoK8sApimachineryPkgApisMetaV1Initializers {
     /**
     * Pending is a list of initializers that must execute in order before this object is visible. When the last pending initializer is removed, and no failing result is set, the initializers struct will be set to nil and the object is considered as initialized and visible to all clients.
     */

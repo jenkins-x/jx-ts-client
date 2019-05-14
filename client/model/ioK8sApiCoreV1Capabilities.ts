@@ -14,7 +14,7 @@
 /**
 * Adds and removes POSIX capabilities from running containers.
 */
-export class IoK8sApiCoreV1Capabilities {
+export interface IoK8sApiCoreV1Capabilities {
     /**
     * Added capabilities
     */

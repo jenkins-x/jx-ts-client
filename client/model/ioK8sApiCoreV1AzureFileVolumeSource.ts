@@ -14,7 +14,7 @@
 /**
 * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
 */
-export class IoK8sApiCoreV1AzureFileVolumeSource {
+export interface IoK8sApiCoreV1AzureFileVolumeSource {
     /**
     * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */

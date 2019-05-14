@@ -17,7 +17,7 @@ import { IoK8sApimachineryPkgApisMetaV1ObjectMeta } from './ioK8sApimachineryPkg
 /**
 * Fact represents observed facts. Apps will generate Facts about the system. A naming schema is required since each Fact has a name that's unique for the whole system. Apps should prefix their generated Facts with the name of the App, like <app-name>-<fact>. This makes that different Apps can't possibly have conflicting Fact names.  For an app generating facts on a pipeline, which will be have several different executions, we recommend <app>-<fact>-<pipeline>.
 */
-export class Fact {
+export interface Fact {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */

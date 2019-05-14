@@ -17,7 +17,7 @@ import { IoK8sApiCoreV1TCPSocketAction } from './ioK8sApiCoreV1TCPSocketAction';
 /**
 * Probe describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic.
 */
-export class IoK8sApiCoreV1Probe {
+export interface IoK8sApiCoreV1Probe {
     'exec'?: IoK8sApiCoreV1ExecAction;
     /**
     * Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.

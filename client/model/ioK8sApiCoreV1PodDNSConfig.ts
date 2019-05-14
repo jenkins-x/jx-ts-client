@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1PodDNSConfigOption } from './ioK8sApiCoreV1PodDNSConfigOp
 /**
 * PodDNSConfig defines the DNS parameters of a pod in addition to those generated from DNSPolicy.
 */
-export class IoK8sApiCoreV1PodDNSConfig {
+export interface IoK8sApiCoreV1PodDNSConfig {
     /**
     * A list of DNS name server IP addresses. This will be appended to the base nameservers generated from DNSPolicy. Duplicated nameservers will be removed.
     */

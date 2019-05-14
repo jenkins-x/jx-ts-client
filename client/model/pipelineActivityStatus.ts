@@ -14,7 +14,7 @@
 /**
 * PipelineActivityStatus is the status for an Environment resource
 */
-export class PipelineActivityStatus {
+export interface PipelineActivityStatus {
     'version'?: string;
 
     static discriminator: string | undefined = undefined;

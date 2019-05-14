@@ -14,7 +14,7 @@
 /**
 * ObjectFieldSelector selects an APIVersioned field of an object.
 */
-export class IoK8sApiCoreV1ObjectFieldSelector {
+export interface IoK8sApiCoreV1ObjectFieldSelector {
     /**
     * Version of the schema the FieldPath is written in terms of, defaults to \"v1\".
     */

@@ -15,7 +15,7 @@ import { IoK8sApimachineryPkgApisMetaV1LabelSelectorRequirement } from './ioK8sA
 /**
 * A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
 */
-export class IoK8sApimachineryPkgApisMetaV1LabelSelector {
+export interface IoK8sApimachineryPkgApisMetaV1LabelSelector {
     /**
     * matchExpressions is a list of label selector requirements. The requirements are ANDed.
     */

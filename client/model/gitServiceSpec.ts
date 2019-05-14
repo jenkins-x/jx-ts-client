@@ -14,7 +14,7 @@
 /**
 * GitServiceSpec is the specification of an GitService
 */
-export class GitServiceSpec {
+export interface GitServiceSpec {
     'gitKind'?: string;
     'name'?: string;
     'url'?: string;

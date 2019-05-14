@@ -14,7 +14,7 @@
 /**
 * The pod this Toleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator <operator>.
 */
-export class IoK8sApiCoreV1Toleration {
+export interface IoK8sApiCoreV1Toleration {
     /**
     * Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
     */

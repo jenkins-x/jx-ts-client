@@ -15,7 +15,7 @@ import { IoK8sApiCoreV1HTTPHeader } from './ioK8sApiCoreV1HTTPHeader';
 /**
 * HTTPGetAction describes an action based on HTTP Get requests.
 */
-export class IoK8sApiCoreV1HTTPGetAction {
+export interface IoK8sApiCoreV1HTTPGetAction {
     /**
     * Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.
     */

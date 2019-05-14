@@ -14,7 +14,7 @@
 /**
 * Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.
 */
-export class IoK8sApiCoreV1QuobyteVolumeSource {
+export interface IoK8sApiCoreV1QuobyteVolumeSource {
     /**
     * Group to map volume access to Default is no group
     */

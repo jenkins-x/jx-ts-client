@@ -14,7 +14,7 @@
 /**
 * SourceRepositorySpec provides details of the metadata for an App
 */
-export class SourceRepositorySpec {
+export interface SourceRepositorySpec {
     'description'?: string;
     'org'?: string;
     /**

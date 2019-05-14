@@ -14,7 +14,7 @@
 /**
 * StorageLocation
 */
-export class StorageLocation {
+export interface StorageLocation {
     'bucketUrl'?: string;
     'classifier'?: string;
     'gitBranch'?: string;

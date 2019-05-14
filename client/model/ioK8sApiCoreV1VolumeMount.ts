@@ -14,7 +14,7 @@
 /**
 * VolumeMount describes a mounting of a Volume within a container.
 */
-export class IoK8sApiCoreV1VolumeMount {
+export interface IoK8sApiCoreV1VolumeMount {
     /**
     * Path within the container at which the volume should be mounted.  Must not contain ':'.
     */

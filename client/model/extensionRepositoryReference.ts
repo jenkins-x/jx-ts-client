@@ -12,7 +12,7 @@
 
 import { ChartRef } from './chartRef';
 
-export class ExtensionRepositoryReference {
+export interface ExtensionRepositoryReference {
     'chart'?: ChartRef;
     'github'?: string;
     'url'?: string;

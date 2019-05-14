@@ -14,7 +14,7 @@
 /**
 * EnvironmentRoleBindingStatus is the status for an EnvironmentRoleBinding resource
 */
-export class EnvironmentRoleBindingStatus {
+export interface EnvironmentRoleBindingStatus {
     'version'?: string;
 
     static discriminator: string | undefined = undefined;

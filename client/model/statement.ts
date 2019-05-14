@@ -14,7 +14,7 @@
 /**
 * Statement represents a decision that was made, for example that a promotion was approved or denied
 */
-export class Statement {
+export interface Statement {
     'measurementValue': boolean;
     'name': string;
     'statementType': string;

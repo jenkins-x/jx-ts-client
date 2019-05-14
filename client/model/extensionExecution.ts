@@ -15,7 +15,7 @@ import { EnvironmentVariable } from './environmentVariable';
 /**
 * ExtensionExecution is an executable instance of an extension which can be attached into a pipeline for later execution. It differs from an Extension as it cannot have children and parameters have been resolved to environment variables
 */
-export class ExtensionExecution {
+export interface ExtensionExecution {
     'description'?: string;
     'environmentVariables'?: Array<EnvironmentVariable>;
     'given'?: string;

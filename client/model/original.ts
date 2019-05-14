@@ -14,7 +14,7 @@
 /**
 * Original contains the report
 */
-export class Original {
+export interface Original {
     'mimetype'?: string;
     'tags'?: Array<string>;
     'url'?: string;

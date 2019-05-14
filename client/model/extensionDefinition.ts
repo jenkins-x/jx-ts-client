@@ -16,7 +16,7 @@ import { ExtensionParameter } from './extensionParameter';
 /**
 * ExtensionDefinition defines an Extension
 */
-export class ExtensionDefinition {
+export interface ExtensionDefinition {
     'children'?: Array<ExtensionDefinitionChildReference>;
     'description'?: string;
     'given'?: string;

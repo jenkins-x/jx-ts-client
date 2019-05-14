@@ -14,7 +14,7 @@
 /**
 * ExtensionRepositoryReference references a GitHub repo that contains extension definitions
 */
-export class ExtensionDefinitionReference {
+export interface ExtensionDefinitionReference {
     'remote': string;
     'tag': string;
 

@@ -14,7 +14,7 @@
 /**
 * SELinuxOptions are the labels to be applied to the container
 */
-export class IoK8sApiCoreV1SELinuxOptions {
+export interface IoK8sApiCoreV1SELinuxOptions {
     /**
     * Level is SELinux level label that applies to the container.
     */

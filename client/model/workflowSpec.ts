@@ -15,7 +15,7 @@ import { WorkflowStep } from './workflowStep';
 /**
 * WorkflowSpec is the specification of the pipeline activity
 */
-export class WorkflowSpec {
+export interface WorkflowSpec {
     'pipeline'?: string;
     'steps'?: Array<WorkflowStep>;
 

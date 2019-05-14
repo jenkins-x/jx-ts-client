@@ -15,7 +15,7 @@ import { Binary } from './binary';
 /**
 * PluginSpec provides details of a binary plugin available for a team
 */
-export class PluginSpec {
+export interface PluginSpec {
     'binaries'?: Array<Binary>;
     'description'?: string;
     'group'?: string;

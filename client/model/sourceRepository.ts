@@ -16,7 +16,7 @@ import { SourceRepositorySpec } from './sourceRepositorySpec';
 /**
 * SourceRepository is the metadata for an Application/Project/SourceRepository
 */
-export class SourceRepository {
+export interface SourceRepository {
     /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
