@@ -15,7 +15,7 @@ GENERATOR_BIN := scripts/openapi-generator-cli
 all: build-customization generate
 
 build-customization:
-	mvn clean package -f ${NO_TRANSFER_PROGRESS} ${CUSTOMIZATION_DIR}/pom.xml
+	mvn clean package ${NO_TRANSFER_PROGRESS} -f ${CUSTOMIZATION_DIR}/pom.xml
 
 generate:
 	rm -rf scripts/*.jar
