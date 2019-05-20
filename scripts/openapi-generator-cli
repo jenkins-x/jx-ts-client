@@ -63,8 +63,9 @@ fi
 ${DIR}/customize-openapi-generator.sh
 
 
+echo "Running OpenAPI Generator with args $@"
 java -ea                          \
-  ${JAVA_OPTS:-}                    \
+  ${JAVA_OPTS:-}                  \
   -Xms512M                        \
   -Xmx1024M                       \
   -server                         \
