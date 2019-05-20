@@ -18,49 +18,54 @@
 # NOTE: Jars are downloaded on demand from maven into the same directory as this script
 # for every 'latest' version pulled from github. Consider putting this under its own directory.
 ####
-set -o pipefail
+set -euo pipefail
 
-for cmd in {mvn,jq,curl}; do
-  if ! command -v ${cmd} > /dev/null; then
-  >&2 echo "This script requires '${cmd}' to be installed."
-    exit 1
+if [[ -z "${OPENAPI_CODEGEN_BIN:-}" ]]; then
+
+  for cmd in {mvn,jq,curl}; do
+    if ! command -v ${cmd} > /dev/null; then
+    >&2 echo "This script requires '${cmd}' to be installed."
+      exit 1
+    fi
+  done
+
+  function latest.tag {
+    local uri="https://api.github.com/repos/${1}/releases"
+    local ver=$(curl -s ${uri} | jq -r 'first(.[]|select(.prerelease==false)).tag_name')
+    if [[ $ver == v* ]]; then
+      ver=${ver:1}
+    fi
+    echo $ver
+  }
+
+  ghrepo=openapitools/openapi-generator
+  groupid=org.openapitools
+  artifactid=openapi-generator-cli
+  ver=${OPENAPI_GENERATOR_VERSION:-$(latest.tag $ghrepo)}
+
+  jar=${artifactid}-${ver}.jar
+  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+  if [ ! -f ${DIR}/${jar} ]; then
+    repo="central::default::https://repo1.maven.org/maven2/"
+    if [[ ${ver} =~ ^.*-SNAPSHOT$ ]]; then
+        repo="central::default::https://oss.sonatype.org/content/repositories/snapshots"
+    fi
+    mvn org.apache.maven.plugins:maven-dependency-plugin:2.9:get \
+      -DremoteRepositories=${repo} \
+      -Dartifact=${groupid}:${artifactid}:${ver} \
+      -Dtransitive=false \
+      -Ddest=${DIR}/${jar}
   fi
-done
-
-function latest.tag {
-  local uri="https://api.github.com/repos/${1}/releases"
-  local ver=$(curl -s ${uri} | jq -r 'first(.[]|select(.prerelease==false)).tag_name')
-  if [[ $ver == v* ]]; then
-    ver=${ver:1}
-  fi
-  echo $ver
-}
-
-ghrepo=openapitools/openapi-generator
-groupid=org.openapitools
-artifactid=openapi-generator-cli
-ver=${OPENAPI_GENERATOR_VERSION:-$(latest.tag $ghrepo)}
-
-jar=${artifactid}-${ver}.jar
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-if [ ! -f ${DIR}/${jar} ]; then
-  repo="central::default::https://repo1.maven.org/maven2/"
-  if [[ ${ver} =~ ^.*-SNAPSHOT$ ]]; then
-      repo="central::default::https://oss.sonatype.org/content/repositories/snapshots"
-  fi
-  mvn org.apache.maven.plugins:maven-dependency-plugin:2.9:get \
-    -DremoteRepositories=${repo} \
-    -Dartifact=${groupid}:${artifactid}:${ver} \
-    -Dtransitive=false \
-    -Ddest=${DIR}/${jar}
+  export OPENAPI_CODEGEN_BIN=${DIR}/${jar}
 fi
 
-pushd jxtsclientopenapi/target/classes && zip -qq -ur ../../../scripts/${artifactid}-${ver}.jar * && popd
+${DIR}/customize-openapi-generator.sh
+
 
 java -ea                          \
-  ${JAVA_OPTS}                    \
+  ${JAVA_OPTS:-}                    \
   -Xms512M                        \
   -Xmx1024M                       \
   -server                         \
-  -jar ${DIR}/${jar} "$@"
+  -jar ${OPENAPI_CODEGEN_BIN} "$@"
