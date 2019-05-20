@@ -1,15 +1,20 @@
 ifndef JX_HOME
 override JX_HOME = ~/.jx
 endif
-GENERATOR_BIN := scripts/openapi-generator-cli
-OPENAPI_GENERATOR_VERSION:= 3.3.4
+
+OPENAPI_GENERATOR_VERSION:= 4.0.0
 OUTPUT_DIR_JX=client
 CUSTOMIZATION_DIR=`pwd`/jxtsclientopenapi
+ifdef BUILD_NUMBER
+NO_TRANSFER_PROGRESS := --no-transfer-progress
+endif
+
+GENERATOR_BIN := scripts/openapi-generator-cli
 
 all: build-customization generate
 
 build-customization:
-	mvn clean package -f ${CUSTOMIZATION_DIR}/pom.xml
+	mvn clean package -f ${NO_TRANSFER_PROGRESS} ${CUSTOMIZATION_DIR}/pom.xml
 
 generate:
 	rm -rf scripts/*.jar
