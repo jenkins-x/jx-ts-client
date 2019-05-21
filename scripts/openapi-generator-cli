@@ -20,6 +20,8 @@
 ####
 set -euo pipefail
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 if [[ -z "${OPENAPI_CODEGEN_BIN:-}" ]]; then
 
   for cmd in {mvn,jq,curl}; do
@@ -44,7 +46,6 @@ if [[ -z "${OPENAPI_CODEGEN_BIN:-}" ]]; then
   ver=${OPENAPI_GENERATOR_VERSION:-$(latest.tag $ghrepo)}
 
   jar=${artifactid}-${ver}.jar
-  DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
   if [ ! -f ${DIR}/${jar} ]; then
     repo="central::default::https://repo1.maven.org/maven2/"
