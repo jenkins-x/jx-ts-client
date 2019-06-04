@@ -1,6 +1,6 @@
 {
   "name": "jx-ts-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typescript models for Jenkins X",
   "main": "client/api.ts",
   "files": [
