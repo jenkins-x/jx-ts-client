@@ -5,6 +5,7 @@
   "main": "client/api.ts",
   "files": [
     "generated",
+    "client",
     "README.md"
   ],
   "scripts": {
